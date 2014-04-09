@@ -37,7 +37,9 @@ public:
 		return new StandardReceipt(parkingTime);
 	}
 
-	Display 
+	Display createDisplay() {
+		return new EndTimeDisplay;
+	}
 };
 
 
