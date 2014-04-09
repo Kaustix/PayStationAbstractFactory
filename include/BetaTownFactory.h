@@ -21,6 +21,7 @@
 #include "PayStationFactory.h"
 #include "ProgressiveRateStrategy.h"
 #include "StandardReceipt.h"
+#include "MinutesDisplayStrategy.h"
 
 
 /// class implementing the PayStationFactory interface; configures the
@@ -33,6 +34,10 @@ public:
 
 	Receipt createReceipt(int parkingTime) {
 		return new StandardReceipt(parkingTime, true);
+	}
+
+	Display createDisplay() {
+		return new MinutesDisplayStrategy;
 	}
 };
 

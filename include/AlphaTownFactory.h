@@ -22,6 +22,7 @@
 #include "PayStationFactory.h"
 #include "LinearRateStrategy.h"
 #include "StandardReceipt.h"
+#include "EndTimeDisplayFactory.h"
 #include <cstddef>
 
 
@@ -38,7 +39,7 @@ public:
 	}
 
 	Display createDisplay() {
-		return new EndTimeDisplay;
+		return new EndTimeDisplayFactory;
 	}
 };
 
