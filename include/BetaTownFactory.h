@@ -36,7 +36,7 @@ public:
 		return new StandardReceipt(parkingTime, true);
 	}
 
-	Display createDisplay() {
+	DisplayStrategy createDisplayStrategy() {
 		return new MinutesDisplayStrategy;
 	}
 };

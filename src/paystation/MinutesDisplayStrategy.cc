@@ -1,5 +1,5 @@
 #include "MinutesDisplayStrategy.h"
 
-int MinutesDisplayStrategy::calculateOutput(timeBoughtSoFar) {
+int MinutesDisplayStrategy::calculateOutput(int timeBoughtSoFar) {
 	return timeBoughtSoFar;
 }

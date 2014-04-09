@@ -19,6 +19,7 @@
 #define __PAYSTATIONFACTORY_H
 
 #include "RateStrategy.h"
+#include "DisplayStrategy.h"
 #include "Receipt.h"
 
 
@@ -36,8 +37,8 @@ public:
 	virtual Receipt createReceipt(int parkingTime) = 0;
 
 	/// creates an appropiate display implementation object
-	/// \return a display object
-	virtual Display createDisplay() = 0;
+	/// \return an abstract display object
+	virtual DisplayStrategy createDisplayStrategy() = 0;
 };
 
 typedef PayStationFactoryInterface* PayStationFactory;

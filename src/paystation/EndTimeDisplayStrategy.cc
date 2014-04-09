@@ -1,4 +1,11 @@
+/**Implementation for EndTime display interface
+   Responsibilities:
+                        
+	 1) Return the current time +add timeBoughtSofar
+*/
+
 #include "EndTimeDisplayStrategy.h"
+#include "ctime"
 
 int EndTimeDisplayStrategy::calculateOutput(int timeBoughtSoFar) {
 	struct tm *timeval;

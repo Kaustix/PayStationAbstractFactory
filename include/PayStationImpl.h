@@ -32,7 +32,7 @@ private:
 
 	RateStrategy rateStrategy; ///< the strategy for rate calculation
 	PayStationFactory psFactory; ///< the factory object to create receipts
-	DisplayStrategy displayStrategy ///< the strategy for display calculation
+	DisplayStrategy displayStrategy; ///< the strategy for display calculation
 
 	/// clears the amount inserted so far and time bought
 	void reset();

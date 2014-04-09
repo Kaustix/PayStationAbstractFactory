@@ -12,7 +12,7 @@
 class EndTimeDisplayStrategy : public DisplayStrategyInterface {
 private:
 	/// Combines two integers into one, easier than type casting
-	int combineIntegers(int a, int b)
+	int combineIntegers(int a, int b);
 public:
 	EndTimeDisplayStrategy();
 	/// Implementation for calculateOutput function
