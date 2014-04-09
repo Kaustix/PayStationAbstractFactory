@@ -34,6 +34,10 @@ public:
 	/// \return a receipt object allocated on the heap; to be freed by
 	/// the client of the PayStation::buy method.
 	virtual Receipt createReceipt(int parkingTime) = 0;
+
+	/// creates an appropiate display implementation object
+	/// \return a display object
+	virtual Display createDisplay() = 0;
 };
 
 typedef PayStationFactoryInterface* PayStationFactory;

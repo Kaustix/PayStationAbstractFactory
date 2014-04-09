@@ -13,6 +13,7 @@
                         
    1) Create RateStrategy object
    2) Create Receipt object
+   3) Create Display object
 */
 
 #ifndef __ALPHATOWNFACTORY_H
@@ -35,6 +36,8 @@ public:
 	Receipt createReceipt(int parkingTime) {
 		return new StandardReceipt(parkingTime);
 	}
+
+	Display 
 };
 
 
